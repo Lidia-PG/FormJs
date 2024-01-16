@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <h1>Monedero</h1>
     <form>
 
-
-<label for="transactionType">Tipo</label>
-<input id="transactionType">
-<label for="transactionDescription">Descripción</label>
-<input id="transactionDescription">
-<label for="transactionCategory">Categoría</label>
-<input id="transactionCategory">
-<label for="transactionAmount">Mondo</label>
-<input id="transactionAmount">
-<button>Enviar</button>
+        <p>Tipo de transacción:</p>
+        <label for="transactionType">ingreso</label>
+        <input id="transactionType" type="radio">
+        <label for="transactionType">Gastos</label>
+        <input id="transactionType" type="radio">
+        <label for="transactionDescription">Descripción</label>
+        <input id="transactionDescription">
+        <label for="transactionCategory">Categoría</label>
+        <input id="transactionCategory">
+        <label for="transactionAmount">Monto</label>
+        <input id="transactionAmount" type="number">
+        <button>Enviar</button>
     </form>
 </body>
+
 </html>
