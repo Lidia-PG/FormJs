@@ -5,26 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
 
     <h1>Monedero</h1>
-    <form>
+    <form id="transactionForm">
+        <div class="formulario">
+            <p>Tipo de transacción:</p>
+            <label for="transactionType">ingreso</label>
+            <input id="transactionType" type="radio" name="tsSelector">
+            <label for="transactionType">Gastos</label>
+            <input id="transactionType" type="radio" name="tsSelector">
+        </div>
+        <div class="formulario">
+            <label for="transactionDescription">Descripción</label>
+            <input id="transactionDescription" name="transactionDescription">
+        </div>
+        <div class="formulario">
+            <label for="transactionCategory">Categoría</label>
+            <input id="transactionCategory" name="transactionCategory">
+        </div>
+        <div class="formulario">
+            <label for="transactionAmount">Cantidad</label>
+            <input id="transactionAmount" type="number">
+        </div>
+        <button class="formulario">Enviar</button>
 
-        <p>Tipo de transacción:</p>
-        <label for="transactionType">ingreso</label>
-        <input id="transactionType" type="radio">
-        <label for="transactionType">Gastos</label>
-        <input id="transactionType" type="radio">
-        <label for="transactionDescription">Descripción</label>
-        <input id="transactionDescription">
-        <label for="transactionCategory">Categoría</label>
-        <input id="transactionCategory">
-        <label for="transactionAmount">Monto</label>
-        <input id="transactionAmount" type="number">
-        <button>Enviar</button>
     </form>
+
+    <div class="tableform">
+
+        <table>
+            <tr>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Categoría
+                </th>
+                <th>
+                    Cantidad
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    ingreso
+                </td>
+                <td>
+                    Sueldo
+                </td>
+                <td>
+                    Trabajo
+                </td>
+                <td>
+                    800
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gastos
+                </td>
+                <td>
+                    Sushi
+                </td>
+                <td>
+                    comida
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <style>
+        body {
+            background-color: palevioletred;
+            font-family: monospace, bold;
+            tesxt
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .formulario {
+            margin-top: 20px;
+        }
+        td, th{
+           border: solid blue 1px;
+           padding: 10px;
+        }
+        .tableform{
+         text-align: center;
+         margin: 0px;
+        }
+
+        
+    </style>
 </body>
 
 </html>
